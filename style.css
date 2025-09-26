@@ -1,0 +1,272 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,700;1,5..1200,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders:opsz,wght@10..72,100..900&family=Bricolage+Grotesque:opsz,wght@12..96,200..800&family=DM+Mono:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&family=Hanken+Grotesk:ital,wght@0,100..900;1,100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Lexend+Deca:wght@100..900&family=Playfair:ital,opsz,wght@0,5..1200,700;1,5..1200,700&family=Prompt:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+* {
+  box-sizing: border-box;
+  font-family: "DM Sans", sans-serif;
+}
+body {
+  background-color: hsl(243, 96%, 9%);
+  min-height: 100vh;
+
+  display: grid;
+  align-content: center;
+  width: 1800px;
+}
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 50px;
+}
+header div {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: hsl(243, 23%, 30%);
+  padding: 0px 20px 0px 20px;
+  color: white;
+  border-radius: 10px;
+}
+button {
+  height: 50px;
+  width: 100px;
+  border: none;
+  background-color: hsl(233, 67%, 56%);
+  color: white;
+  font-weight: bold;
+  border-radius: 10px;
+}
+.search {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  justify-content: center;
+  margin-bottom: 50px;
+}
+.search div {
+  display: flex;
+  gap: 10px;
+  width: 500px;
+  background-color: hsl(243, 23%, 30%);
+  height: 50px;
+  padding: 10px;
+  border-radius: 10px;
+}
+input {
+  outline: none;
+  background: none;
+  color: white;
+  border: none;
+}
+.container {
+  width: 1650px;
+  height: 810px;
+  display: grid;
+  margin-left: 60px;
+  grid-template-columns: 300px 300px 300px 300px 450px;
+  grid-template-rows: 290px 130px 390px;
+  gap: 30px;
+}
+.box1 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 1;
+  grid-row-end: 2;
+  position: relative;
+}
+.box2 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: hsl(243, 23%, 30%);
+}
+.box3 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: hsl(243, 23%, 30%);
+}
+.box4 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: hsl(243, 23%, 30%);
+}
+.box5 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+  background-color: hsl(243, 23%, 30%);
+}
+.box6 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 1;
+  grid-row-end: 4;
+  background-color: hsl(243, 23%, 24%);
+  padding: 30px;
+}
+.box7 {
+  grid-column-start: 1;
+  grid-column-end: 5;
+  grid-row-start: 3;
+  grid-row-end: 4;
+  display: grid;
+  grid-template-columns: repeat(7, 1fr);
+  grid-template-rows: repeat(1, 1fr);
+  gap: 20px;
+}
+.container div {
+  border-radius: 20px;
+}
+.box7 h2 {
+  font-size: 30px;
+  color: white;
+  grid-column: 1 / -1;
+}
+.inform div {
+  display: flex;
+  flex-direction: column;
+  padding-left: 10px;
+}
+.inform div p:first-child {
+  margin-top: 5px;
+  font-size: 20px;
+  color: white;
+}
+.inform div p:nth-child(2) {
+  margin-top: -5px;
+  font-size: 40px;
+  color: white;
+}
+.inform {
+  padding: 10px;
+}
+.head-inf {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.head-inf div {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 10px;
+  background-color: hsl(243, 27%, 20%);
+  border-radius: 0px;
+  padding: 0 10px 0 10px;
+  height: 30px;
+}
+.temp-block {
+  margin-top: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: hsl(243, 23%, 30%);
+  padding: 0 20px 0 20px;
+  color: white;
+  height: 70px;
+  border-radius: 15px !important;
+}
+.temp-block div {
+  align-items: center;
+  display: flex;
+  gap: 10px;
+  border-radius: 0;
+}
+.temp-block div p {
+  font-size: 20px;
+}
+.temp-block p {
+  font-size: 20px;
+}
+.block1 {
+  grid-column-start: 1;
+  grid-column-end: 2;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.block2 {
+  grid-column-start: 2;
+  grid-column-end: 3;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.block3 {
+  grid-column-start: 3;
+  grid-column-end: 4;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.block4 {
+  grid-column-start: 4;
+  grid-column-end: 5;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.block5 {
+  grid-column-start: 5;
+  grid-column-end: 6;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.block6 {
+  grid-column-start: 6;
+  grid-column-end: 7;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.block7 {
+  grid-column-start: 7;
+  grid-column-end: 8;
+  grid-row-start: 2;
+  grid-row-end: 3;
+}
+.box7 div {
+  background-color: hsl(243, 23%, 30%);
+  color: white;
+}
+.box1 img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
+}
+.temp-sth {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+.temp-sth div {
+  gap: 50px;
+
+  display: flex;
+}
+.temp-sth p {
+  font-size: 20px;
+}
+.text-weather {
+  display: flex;
+  justify-content: space-between;
+  position: absolute;
+  align-items: center;
+  width: 1200px;
+  top: 0;
+  right: 50px;
+  color: white;
+}
+.weather-inf {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.city {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
